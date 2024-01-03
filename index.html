@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://example.com/nonexistent-script.js"></script>
+    <meta charset="UTF-8">
+
+    <title>Frontend Developer Evaluation</title>
+    <!-- Add style to extrnal file
+    <link rel="stylesheet" href="css/main.css">
+    -->
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            color: #333;
+        }
+
+        .container {
+            max-width: 80%;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        img {
+            /* Add semicolon width: 100px; */
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+
+        #main-nav ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        #main-nav li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        a.active {
+            color: red;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: #0056b3;
+            color: white;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #004494;
+        }
+
+        .card {
+            background-color: #f4f4f4;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .card h3 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header id="main-header">
+            <h1>Welcome to Our Website</h1>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li> <!-- Add close </li> tag -->
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="content">
+            <article class="card">
+                <h2>About Us</h2>
+                <p>We offer various services including web design, development, and marketing.</p>
+                <!-- 
+                 External Resource Loading Issue:
+                 Change scr to src
+                -->
+                <img src="images/our-team.jpg" alt="Our Team">
+                <p>To learn more about our services, <a href="services.html" class="button">Click
+                        Here</a><!-- Remove <button> tag --></p> <!-- Add close </p> tag -->
+            </article>
+            <article class="card" id="contact">
+                <h3>Contact Us</h3>
+                <p>Have any questions? Reach out to our support team.</p>
+                <a href="mailto:info@ourwebsite.com">Email Us</a>
+            </article>
+        </section>
+        <footer id="main-footer">
+            <p>&copy; 2023 All rights reserved. Our Website Inc.</p> <!-- Add dynamic year -->
+            <p>Follow us on <a href="https://www.socialmedia.com/ourwebsite" target="_blank">Social
+                    Media</a></p>
+        </footer>
+    </div>
+    <!-- 
+        External Script Loading Issue:
+        Ensure the script URL is correct or remove it if not needed
+    -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
